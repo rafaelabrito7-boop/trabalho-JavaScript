@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media    </title>
+</head>
+
+<body>
+    <h1>Calculadora de Média</h1>
+    <p> Você deve inserir as nnotas dos alunos </p>
+    <button onclick="calcularMedia()"> iniciar programa </button>
+    <h2 id="media">consumo medio de energia/kwh  </h2>
+
+    <script>
+         function calcularMedia(){
+            let contador = 0;
+            let valor = 0;
+            let soma = 0;
+            let media = 0;  
+            while (contador <=3){
+                valor= Number (prompt("digite o valor deste mes;  "));
+                soma = soma + valor;
+                contador++; 
+
+            }
+            media = soma / 3; 
+
+            document.getElementById("media").innerHTML = "A média é: " + media.toFixed(2) ;
+            alert("A média é: " + media.toFixed(2));
+         }
+
+
+    </script>
+    
+</body>
+</html>
